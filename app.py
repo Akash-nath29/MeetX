@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://admin:m5NTJK6ytjCCBDj2xL8RSxkkCJZEYaSb@dpg-cnuqtcqcn0vc73b8b4ig-a.singapore-postgres.render.com/meetx_db"
 app.config["SECRET_KEY"] = "My SUper Secret Key"
 
 db = SQLAlchemy(app)
